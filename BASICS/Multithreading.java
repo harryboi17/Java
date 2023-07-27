@@ -18,16 +18,17 @@ class Mythread2 extends Thread{
 
 class MyThreadRun1 implements Runnable{
     public void run(){
-        int n = 100;
+        int n = 10;
         while(n-- != 0)
             System.out.println("Im Harshit Bansal");
     }
 }
 class MyThreadRun2 implements Runnable{
+    final int n = 100;
     public void run(){
-        int n = 100;
+        int n = 10;
         while(n-- != 0)
-            System.out.println("Im Vanshika M");
+            System.out.println(this.n);
     }
 }
 
